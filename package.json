@@ -2,12 +2,23 @@
   "name": "@nicolo-ribaudo/chokidar-2",
   "version": "2.1.8",
   "description": "A wrapper around chokidar@2 to be able to specify both @2 and @3 as dependencies",
-  "main": "index.js",
+  "main": "./chokidar/index.js",
+  "types": "./chokidar/types/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "download-chokidar": "./download-chokidar.sh"
   },
   "dependencies": {
-    "chokidar": "2.1.8"
+    "anymatch": "^2.0.0",
+    "async-each": "^1.0.1",
+    "braces": "^2.3.2",
+    "glob-parent": "^3.1.0",
+    "inherits": "^2.0.3",
+    "is-binary-path": "^1.0.0",
+    "is-glob": "^4.0.0",
+    "normalize-path": "^3.0.0",
+    "path-is-absolute": "^1.0.0",
+    "readdirp": "^2.2.1",
+    "upath": "^1.1.1"
   },
   "author": "Nicolò Ribaudo <nicolo.ribaudo@gmail.com>",
   "license": "MIT",

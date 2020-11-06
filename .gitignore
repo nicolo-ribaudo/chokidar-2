@@ -1,1 +1,3 @@
 node_modules
+chokidar
+chokidar-*.tgz
