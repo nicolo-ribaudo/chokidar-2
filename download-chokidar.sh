@@ -14,6 +14,9 @@ rm chokidar-$CHOKIDAR_VERSION.tgz
 
 node -e "
     const pkg = require('./package.json');
-    pkg.dependencies = require('./chokidar/package.json').dependencies;
+    pkg.dependencies = {
+        ...require('./chokidar/package.json').dependencies,
+        'glob-parent': '^5.1.2'
+    };
     fs.writeFileSync('./package.json', JSON.stringify(pkg, null, 2) + '\n');
 "
