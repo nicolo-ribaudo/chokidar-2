@@ -1,6 +1,6 @@
 {
   "name": "@nicolo-ribaudo/chokidar-2",
-  "version": "2.1.8-no-fsevents",
+  "version": "2.1.8-no-fsevents.2",
   "description": "A wrapper around chokidar@2 to be able to specify both @2 and @3 as dependencies",
   "main": "./chokidar/index.js",
   "types": "./chokidar/types/index.d.ts",
